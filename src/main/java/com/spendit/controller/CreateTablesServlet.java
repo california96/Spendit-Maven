@@ -1,8 +1,6 @@
 package com.spendit.controller;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.Connection;
+import com.spendit.utility.DBConnection;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -10,8 +8,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.spendit.utility.DBConnection;
-import com.spendit.controller.DatabaseController;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
 /**
  * Servlet implementation class CreateTablesServlet
  */

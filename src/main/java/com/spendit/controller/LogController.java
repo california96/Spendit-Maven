@@ -1,23 +1,11 @@
 package com.spendit.controller;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-
-import javax.servlet.http.HttpServletResponse;
-
-import com.opencsv.CSVWriter;
-
-import com.spendit.model.Log;
 
 public class LogController {
 	public static final int ACCOUNT_CREATED = 1;

@@ -1,10 +1,8 @@
 package com.spendit.controller;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
+import com.spendit.model.Income;
+import com.spendit.model.User;
+import com.spendit.utility.DBConnection;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,17 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
-import com.itextpdf.text.pdf.PdfWriter;
-
-import com.spendit.model.Expense;
-import com.spendit.model.Income;
-import com.spendit.model.User;
-import com.spendit.utility.DBConnection;
+import java.io.IOException;
+import java.sql.Connection;
+import java.util.ArrayList;
 
 /**
  * Servlet implementation class DownloadExpenseReportServlet

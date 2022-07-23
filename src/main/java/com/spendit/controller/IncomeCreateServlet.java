@@ -1,9 +1,8 @@
 package com.spendit.controller;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import com.spendit.model.User;
+import com.spendit.utility.DBConnection;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,13 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import org.apache.commons.lang3.StringUtils;
-
-import com.spendit.model.Expense;
-import com.spendit.model.Income;
-import com.spendit.model.User;
-import com.spendit.utility.DBConnection;
+import java.io.IOException;
+import java.sql.Connection;
+import java.text.SimpleDateFormat;
 
 /**
  * Servlet implementation class ExpenseCreateServlet

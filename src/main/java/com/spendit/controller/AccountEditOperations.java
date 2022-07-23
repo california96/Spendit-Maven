@@ -1,11 +1,11 @@
 package com.spendit.controller;
 
+import com.spendit.utility.BCrypt;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import com.spendit.utility.BCrypt;
 
 public class AccountEditOperations {
 

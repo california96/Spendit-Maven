@@ -1,2 +1,4 @@
 /web/node_modules/
 /target/
+/.idea/
+/web/package-lock.json

@@ -1,15 +1,6 @@
 package com.spendit.controller;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import com.spendit.utility.DBConnection;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -17,13 +8,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import com.itextpdf.text.pdf.codec.Base64.OutputStream;
-import com.opencsv.CSVWriter;
-
-import com.spendit.model.User;
-import com.spendit.utility.DBConnection;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
 
 /**
  * Servlet implementation class DownloadLogsServlet

@@ -1,11 +1,12 @@
 package com.spendit.controller;
+
+import com.spendit.model.Status;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import com.spendit.model.Status;
 public class StatusOperations {
 	public ArrayList<com.spendit.model.Status> getAllStatus(Connection connection){
 		ArrayList<com.spendit.model.Status> status = new ArrayList<com.spendit.model.Status>();

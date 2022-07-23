@@ -1,27 +1,22 @@
 package com.spendit.controller;
 
-import com.spendit.model.Expense;
-import com.spendit.model.User;
-
-import java.io.FileOutputStream;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.text.SimpleDateFormat;
-import java.sql.Date;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletResponse;
-
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.spendit.model.Expense;
+import com.spendit.model.User;
+
+import javax.servlet.http.HttpServletResponse;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 public class ExpenseOperations {
 	public boolean insert(Connection connection, int categoryID, int userID, double cost, String date, String comment) {
 		String sql = "INSERT INTO expenses(categoryID, userID, cost, date, comment) VALUES (?, ?, ?, ?, ?)";

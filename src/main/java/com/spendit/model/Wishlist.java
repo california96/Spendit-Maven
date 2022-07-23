@@ -1,5 +1,5 @@
 package com.spendit.model;
-import java.sql.Date;
+
 public class Wishlist {
 	private int id;
 	private int userID;

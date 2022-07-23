@@ -1,5 +1,5 @@
 package com.spendit.model;
-import java.sql.Date;
+
 public class Income {
 	private int incomeID;
 	private int userID;

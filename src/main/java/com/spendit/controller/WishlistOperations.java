@@ -1,6 +1,7 @@
 package com.spendit.controller;
-import com.spendit.model.Expense;
+
 import com.spendit.model.Wishlist;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

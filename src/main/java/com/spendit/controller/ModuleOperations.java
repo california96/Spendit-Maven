@@ -5,10 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import com.google.gson.Gson;
-
-import com.spendit.utility.DBConnection;
-
 public class ModuleOperations {
 	public ArrayList<com.spendit.model.Module> getModules(Connection connection){
 	ArrayList<com.spendit.model.Module> modules = new ArrayList<com.spendit.model.Module>();

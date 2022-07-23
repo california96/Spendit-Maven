@@ -1,7 +1,5 @@
 package com.spendit.model;
 
-import java.sql.Date;
-
 public class Expense {
 	private int expenseID;//use this only for retrieval
 	private int categoryID;

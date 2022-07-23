@@ -1,10 +1,10 @@
 package com.spendit.controller;
+
+import com.spendit.model.DatabaseFacade;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-
-
-import com.spendit.model.DatabaseFacade;
 public class DatabaseController implements DatabaseFacade{
 	private Connection connection;
 	public DatabaseController(Connection connection) {

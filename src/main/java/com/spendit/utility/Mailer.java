@@ -1,9 +1,10 @@
 package com.spendit.utility;
-import java.util.Properties;
 
 import javax.mail.*;
-import javax.mail.internet.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import javax.servlet.ServletContext;
+import java.util.Properties;
 public class Mailer {
 	private ServletContext context;
 	public Mailer(ServletContext context) {

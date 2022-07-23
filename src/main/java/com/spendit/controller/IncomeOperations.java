@@ -1,22 +1,20 @@
 package com.spendit.controller;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-
-import javax.servlet.http.HttpServletResponse;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
-
-import com.spendit.model.Expense;
 import com.spendit.model.Income;
 import com.spendit.model.User;
+
+import javax.servlet.http.HttpServletResponse;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 public class IncomeOperations {
 	public boolean insert(Connection connection, int userID, int categoryID, double amount, String date, String comment) {
 		String sql = "INSERT INTO incomes(userID, categoryID, amount, date, comment) VALUES (?, ?,?, ?, ?)";

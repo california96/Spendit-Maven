@@ -1,15 +1,15 @@
 package com.spendit.controller;
 
-import java.io.IOException;
+import com.spendit.model.User;
+import com.spendit.utility.DBConnection;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import com.spendit.model.User;
-import com.spendit.utility.DBConnection;
+import java.io.IOException;
 
 /**
  * Servlet implementation class SignOutServlet
