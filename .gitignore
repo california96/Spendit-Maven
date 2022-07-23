@@ -1,4 +1,5 @@
 /web/node_modules/
 /target/
 /.idea/
-/web/package-lock.json
+/src/main/webapp/package-lock.json
+/src/main/webapp/node_modules/

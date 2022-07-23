@@ -6,7 +6,7 @@
     <display-name>Spendit</display-name>
     <welcome-file-list>
 
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>/index.jsp</welcome-file>
     </welcome-file-list>
     <error-page>
         <error-code>500</error-code>
@@ -92,29 +92,11 @@
         <description></description>
         <display-name>LoginServlet</display-name>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>controller.LoginServlet</servlet-class>
+        <servlet-class>com.spendit.controller.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login.action</url-pattern>
     </servlet-mapping>
-    <filter>
-        <filter-name>XSSFilter</filter-name>
-        <filter-class>com.cj.xss.XSSFilter</filter-class>
-    </filter>
-    <filter>
-        <filter-name>HSTSFilter</filter-name>
-        <filter-class>controller.HSTSFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>XSSFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>HSTSFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-        <dispatcher>REQUEST</dispatcher>
-        <dispatcher>FORWARD</dispatcher>
 
-    </filter-mapping>
 </web-app>

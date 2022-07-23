@@ -98,13 +98,14 @@
         <!--End Struts 2 Resources-->
     </dependencies>
     <build>
+        <finalName>spendit</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
                     <configuration>
-                        <webXml>G:\JavaWorkspace\ee_workspace\Spendit-Maven\web\WEB-INF\web.xml</webXml>
+                        <webXml>G:\JavaWorkspace\ee_workspace\Spendit-Maven\src\main\webapp\WEB-INF\web.xml</webXml>
                     </configuration>
                 </plugin>
                 <plugin>
