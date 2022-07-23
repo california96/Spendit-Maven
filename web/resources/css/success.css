@@ -1,0 +1,127 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#success {
+  position: relative;
+  height: 100vh;
+}
+
+#success .success {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.success {
+  max-width: 767px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding: 15px;
+}
+
+.success .success-404 {
+  position: relative;
+  height: 160px;
+}
+
+.success .success-404 h1 {
+  font-family: 'Bangers', sans-serif;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: 200;
+  margin: 0px;
+  background: linear-gradient(130deg, #50C878, #50C878);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.success h2 {
+  font-family: 'Bangers', sans-serif;
+  font-size: 33px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+}
+
+.success p {
+  font-family: 'Bangers', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+
+.success a {
+  font-family: 'Bangers', sans-serif;
+  color: #73C2FB;
+  font-weight: 200;
+  text-decoration: none;
+  border-bottom: 1px dashed #73C2FB;
+  border-radius: 2px;
+}
+.success a:hover {
+  font-family: 'Bangers', sans-serif;
+  color: #73C2FB;
+  font-weight: 200;
+  text-decoration: none;
+  border-bottom: 1px dashed #73C2FB;
+  border-radius: 2px;
+  text-decoration: underline;
+}
+
+.success-social>a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  font-size: 14px;
+  color: #ff6f68;
+  border: 1px solid #efefef;
+  border-radius: 50%;
+  margin: 3px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.success-social>a:hover {
+  color: #fff;
+  background-color: #ff6f68;
+  border-color: #ff6f68;
+}
+
+@media only screen and (max-width: 480px) {
+  .success .success-404 {
+    position: relative;
+    height: 168px;
+  }
+
+  .success .success-404 h1 {
+   font-size: 90px;
+  }
+
+  .success h2 {
+    font-size: 22px;
+  }
+}
+
+
